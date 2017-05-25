@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: cars
+#
+#  id         :integer          not null, primary key
+#  number     :integer
+#  model      :string
+#  floor_id   :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  model: MyString
+  floor: one
+
+two:
+  number: 1
+  model: MyString
+  floor: two

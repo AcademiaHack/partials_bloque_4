@@ -1,0 +1,8 @@
+%h1 Editing parking_lot
+
+= render partial: 'form', locals: {es_un_formulario_de_creacion: false}
+
+= link_to 'Back', parking_lots_path
+
+- content_for 'page_title' do
+	%h2 Editar Estacionamiento

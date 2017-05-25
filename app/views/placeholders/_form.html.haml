@@ -1,0 +1,16 @@
+= form_for @placeholder do |f|
+  - if @placeholder.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@placeholder.errors.count, "error")} prohibited this placeholder from being saved:"
+      %ul
+        - @placeholder.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :location
+    = f.text_field :location
+  .field
+    = f.label :total_floors
+    = f.number_field :total_floors
+  .actions
+    = f.submit 'Save'

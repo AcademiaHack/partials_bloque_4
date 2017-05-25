@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Location:
+  = @placeholder.location
+%p
+  %b Total floors:
+  = @placeholder.total_floors
+
+= link_to 'Edit', edit_placeholder_path(@placeholder)
+\|
+= link_to 'Back', placeholders_path

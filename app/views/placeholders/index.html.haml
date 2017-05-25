@@ -1,0 +1,23 @@
+%h1 Listing placeholders
+
+%table
+  %thead
+    %tr
+      %th Location
+      %th Total floors
+      %th
+      %th
+      %th
+
+  %tbody
+    - @placeholders.each do |placeholder|
+      %tr
+        %td= placeholder.location
+        %td= placeholder.total_floors
+        %td= link_to 'Show', placeholder
+        %td= link_to 'Edit', edit_placeholder_path(placeholder)
+        %td= link_to 'Destroy', placeholder, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Placeholder', new_placeholder_path

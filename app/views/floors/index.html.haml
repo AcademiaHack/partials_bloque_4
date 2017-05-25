@@ -1,0 +1,15 @@
+%h1 Listing Floors
+
+%table
+  %thead
+    %tr
+      %th Number
+      %th Capacity
+  %tbody
+    - @floors.each do |floor|
+      %tr
+        %td= floor.id
+        %td= floor.car_capacity
+%br
+
+= link_to 'Back', parking_lots_path

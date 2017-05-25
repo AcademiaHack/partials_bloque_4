@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: floors
+#
+#  id             :integer          not null, primary key
+#  car_capacity   :integer
+#  parking_lot_id :integer
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  car_capacity: 1
+  parking_lot: one
+
+two:
+  car_capacity: 1
+  parking_lot: two

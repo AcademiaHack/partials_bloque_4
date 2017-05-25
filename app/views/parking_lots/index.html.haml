@@ -1,0 +1,14 @@
+%h1 Listing Parking Lots
+
+%table
+  %thead
+    %tr
+      %th Location
+      %th Total floors
+      %th
+      %th
+  %tbody
+    = render @parking_lots
+%br
+
+= link_to 'New Parking Lot', new_parking_lot_path
